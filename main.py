@@ -39,7 +39,6 @@ preprocessor.set_output(transform="pandas")
 X_train_raw, X_test_raw, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Apply preprocessing to training and testing data
-# We'll assign these to X_train and X_test to be consistent with later cells expecting these variable names
 X_train = preprocessor.fit_transform(X_train_raw)
 X_test = preprocessor.transform(X_test_raw)
 
